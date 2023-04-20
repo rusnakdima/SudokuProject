@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.styleBorderSolid {
+  @apply border border-solid border-black dark:border-white
+}
+
+.styleBorderSolidNotActive {
+  @apply border border-solid border-gray-400 dark:border-gray-700
+}
+
+.styleNumBlockActive {
+  @apply px-3 py-1 bg-transparent text-black dark:text-white styleBorderSolid cursor-pointer
+}
+
+.styleNumBlockNotActive {
+  @apply px-3 py-1 bg-transparent text-gray-400 dark:text-gray-700 styleBorderSolidNotActive cursor-pointer
+}
+
+.styleStrokeGameTable {
+  @apply flex flex-row
+}
+
+.styleCellGameTable {
+  @apply px-3 py-1 w-11 h-11 bg-transparent text-black dark:text-white styleBorderSolid cursor-pointer
+}
+
+.styleCellR{
+  @apply px-3 py-1 w-11 h-11 bg-transparent text-black dark:text-white border border-solid border-black dark:border-white border-r-4 cursor-pointer
+}
+
+.styleCellB{
+  @apply px-3 py-1 w-11 h-11 bg-transparent text-black dark:text-white border border-solid border-black dark:border-white border-b-4 cursor-pointer
+}
+
+.styleCellBR{
+  @apply px-3 py-1 w-11 h-11 bg-transparent text-black dark:text-white border border-solid border-black dark:border-white border-r-4 border-b-4 cursor-pointer
+}
+
+.styleBut{
+  @apply rounded-lg py-2 px-4 border-b-4 flex flex-row justify-center text-center items-center bg-blue-600 border-solid border-blue-800 text-white dark:bg-zinc-600 dark:border-zinc-400 dark:text-white hover:border-0 hover:mt-1
+}
+
+ion-icon{
+  @apply text-5xl
+}
+
+.valid{
+  @apply text-cyan-500 dark:text-cyan-500
+}

@@ -1,0 +1,19 @@
+{
+  "name": "sudoku-project",
+  "version": "0.0.1",
+  "description": "This sudoku game",
+  "author": "DmitriyDev Studio Company",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "nodemon app.js",
+    "tailwind": "npx tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}

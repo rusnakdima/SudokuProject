@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html class="dark">
+	<head>
+		<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+		<title>Судоку / Sudoku</title>
+		<link rel="shortcut icon" href="icon.png">
+		<script src="/assets/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="/assets/css/output.css">
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</head>
+	<body class="bg-white text-black dark:bg-slate-900 dark:text-white text-3xl flex flex-col text-center m-5 left-0 top-0">
+		<div id="win" class="flex flex-row justify-center mb-5 text-green-500">
+			<span>Congratulations! Sudoku solved correctly!</span>
+		</div>
+		<div id="lose" class="flex flex-row justify-center mb-5 text-red-500">
+			<span>The Sudoku is solved incorrectly!</span>
+		</div>
+		<div class="flex flex-row justify-center">
+			<div id="game" class="flex flex-col w-min styleBorderSolid"></div>
+		</div>
+		<span class="my-2">Цифры для установки в поле</span>
+		<div class="flex flex-row gap-x-2 justify-center" id="number">
+			<span class="styleNumBlockNotActive">1</span>
+			<span class="styleNumBlockNotActive">2</span>
+			<span class="styleNumBlockNotActive">3</span>
+			<span class="styleNumBlockNotActive">4</span>
+			<span class="styleNumBlockNotActive">5</span>
+			<span class="styleNumBlockNotActive">6</span>
+			<span class="styleNumBlockNotActive">7</span>
+			<span class="styleNumBlockNotActive">8</span>
+			<span class="styleNumBlockNotActive">9</span>
+		</div>
+		<div class="flex flex-row gap-x-5 justify-center mt-5">
+			<button class="styleBut" onclick="reset();">Reset</button>
+			<button class="styleBut" onclick="checkLines1();">Check</button>
+		</div>
+		<div class="flex flex-row gap-x-5 justify-center mt-5">
+			<a id="light"><ion-icon name="sunny-outline"></ion-icon></a>
+			<a id="dark"><ion-icon name="moon-outline"></ion-icon></a>
+		</div>
+		<script src="/assets/js/sudoku.js"></script>
+	</body>
+</HTML>
