@@ -4,7 +4,11 @@ This is a sudoku game
 
 ## Screenshots
 
+Light version
 ![screen1](screen1.png)
+
+Dark version
+![screen2](screen2.png)
 
 ## Installation
 
